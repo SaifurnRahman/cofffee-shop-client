@@ -10,17 +10,20 @@ const Header = () => {
     <div>
       <div className="font-sans bg-[#f5f3ef] text-gray-800">
         {/* ======= Navbar ======= */}
-        <header className="bg-[#3e2723] py-4 px-8 flex items-center justify-around">
-          <div><h1 className="text-2xl text-white font-semibold flex items-center gap-2">
+        <header className="bg-[#3e2723] py-4 px-8 flex items-center justify-between">
+          <div><h1 className="text-xl text-white font-semibold flex items-center gap-2">
             <FaCoffee className="text-amber-400 text-3xl" />
             Espresso Emporium
           </h1></div>
 
-          <div className='grid grid-cols-2 gap-2'>
-            <Link to={'/signup'}><button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-6 rounded transition-colors">
+          <div className='grid grid-cols-3 gap-2'>
+            <Link to={'/users'}><button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded transition-colors">
+              Users
+            </button></Link>
+            <Link to={'/signup'}><button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded transition-colors">
               Sign Up
             </button></Link>
-            <Link to={'/login'}><button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-6 rounded transition-colors">
+            <Link to={'/login'}><button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded transition-colors">
               Login
             </button></Link>
           </div>
