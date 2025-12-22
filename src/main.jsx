@@ -25,10 +25,6 @@ const router = createBrowserRouter([
         Component: Home
       },
       {
-        path: '/addcofffee',
-        Component: AddCoffee
-      },
-      {
         path: '/coffee/:id',
         loader: ({ params }) => fetch(`http://localhost:3000/coffee/${params.id}`),
         Component: CoffeeDetails
@@ -40,6 +36,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+        path: '/addcofffee',
+        Component: AddCoffee
+      },
   {
     path: '/login',
     Component: Login

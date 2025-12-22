@@ -1,5 +1,5 @@
 import React from 'react';
-import { data } from 'react-router';
+import { data, Link } from 'react-router';
 import Swal from 'sweetalert2';
 
 const AddCoffee = () => {
@@ -35,9 +35,10 @@ const AddCoffee = () => {
 
     }
     return (
-        <div className='  bg-[#E8D8C0] hop-3'>
+        <div className='  bg-[#E8D8C0] hop-3 m-5 p-5'>
             <div className='text-center'>
-                <h1 className='font-bold text-2xl'>Add New Coffee</h1>
+                <div className='flex justify-between'><h1 className='font-bold text-2xl'>Add New Coffee</h1>
+                <Link to={'/'}><button className='btn'>back</button></Link></div>
                 <p>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
             </div>
             <form onSubmit={handleAddCoffee} className='p-6'>
